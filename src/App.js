@@ -255,14 +255,24 @@ class App extends Component {
 
             <Row>
 
-              <Col s={12} m={7}  className='item-page-item-card'>
+              <Col s={12} l={7}  className='item-page-item-card'>
                 <h1 className='item-page-card-title'>Delicious Snack Title</h1>
                 <h2 className='item-page-card-short-description'>Delicious Snack Short Descripion</h2>
 
 
                 <p className='item-page-card-full-description'>
-                Lorem ipsum dolor amet meggings locavore polaroid synth kale chips. Ethical forage keffiyeh meh sriracha snackwave. YOLO listicle biodiesel cornhole cray authentic ethical jianbing poke pickled activated charcoal literally farm-to-table. Semiotics fam waistcoat tousled, gastropub next level shaman kale chips chicharrones narwhal XOXO put a bird on it shoreditch master cleanse. Mixtape street art godard food truck post-ironic kickstarter. 8-bit mustache selvage shoreditch cred brooklyn gastropub waistcoat wayfarers craft beer food truck godard. Live-edge sustainable cardigan kickstarter enamel pin literally art party hella thundercats post-ironic hell of brunch irony roof party.
+
+                Bacon ipsum dolor amet biltong corned beef tail pork loin, beef ribs kielbasa t-bone porchetta bresaola picanha andouille fatback pig alcatra. Ribeye ground round corned beef filet mignon, fatback andouille frankfurter tri-tip alcatra. Bacon tongue boudin hamburger turkey. Flank doner corned beef salami.
+                <br/><br/>
+                Filet mignon brisket frankfurter pork biltong drumstick tenderloin boudin picanha alcatra. Ball tip shoulder ham swine venison pork belly ribeye leberkas pork chop. Strip steak cupim biltong rump spare ribs tongue ham hock burgdoggen shoulder. Kevin shoulder cow landjaeger pancetta capicola.
                  </p>
+
+
+              </Col>
+              <Col s={12} l={5}>
+                <div className='message-box'></div>
+              </Col>
+              <Col s={12} l={7}>
 
                  <div class='item-page-reviews-container'>
                    <p className = 'item-page-card-review-count'>301 Reviews</p>
@@ -273,10 +283,6 @@ class App extends Component {
                      <i className="fas fa-star-half" />
                    </div>
                  </div>
-
-              </Col>
-              <Col s={12} m={5}>
-                <div className='message-box'></div>
               </Col>
             </Row>
           </section>
