@@ -249,6 +249,7 @@
   margin-top: 30px;
 }
 
+
 /*  Main Item Details*/
 .item-page-item-card {
   margin-top: 30px;
@@ -384,6 +385,43 @@
 
 .modal {
   width: 30vw;
-  height: 30vw;
+  min-width: 450px;
+  height: 450px;
   border-radius: 2px;
+}
+
+.modal#signup {
+  height: 570px;
+}
+
+.modal input {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.modal-form {
+  margin-top: 40px;
+}
+.modal-button {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255,90,95);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.modal-button:focus {
+  background-color: rgb(255,90,95);
+}
+
+.modal-image {
+  display: block;
+  height: 40px;
+  margin: 40px auto;
 }
