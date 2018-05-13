@@ -34,8 +34,10 @@ class App extends Component {
             <img alt=''src={'./assets/nav-logo.png'} className='nav logo image'/>
           </div>
           <div className='nav links'>
-          <a href="#signup">Sign Up</a>
-            <a href="#login">Log In</a>
+            <a href="#signup" >Sign Up</a>
+            <a href="#login" >Log In</a>
+            <a href="#" className='hidden'>Log Out</a>
+
           </div>
         </div>
 
