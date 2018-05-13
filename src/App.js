@@ -284,6 +284,36 @@ class App extends Component {
                    </div>
                  </div>
               </Col>
+
+              <Col s={12} l={7}>
+
+                 <div className='review-card'>
+                 <div className='review-card-header'>
+                   <div>
+                      <div className='review-card-user-image'/>
+                      <div className='review-card-user-container'>
+                        <h3 className='review-card-username'>Tengo</h3>
+                        <h4 className='review-card-date'>May 2018</h4>
+                      </div>
+                    </div>
+                    <div className='review-card-actions'>
+                      <i class="far fa-edit"></i>
+                      <i class="far fa-trash-alt"></i>
+                    </div>
+                  </div>
+                   <div className ='review-card-stars'>
+                     <i className="fas fa-star" />
+                     <i className="fas fa-star" />
+                     <i className="fas fa-star" />
+                     <i className="fas fa-star" />
+                     <i className="fas fa-star" />
+                   </div>
+                   <p className ='review-card-text'></p>
+                 </div>
+              </Col>
+
+
+
             </Row>
           </section>
           <section className='footer'>

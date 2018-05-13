@@ -211,3 +211,64 @@
   border-bottom: 1px solid rgb(225,225,225);
   margin-top: calc(-0px + 20px);
 }
+
+
+/* Review Card */
+
+.review-card {
+  margin-top: 20px;
+  background-color: rgba(0,0,0,0.0);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(225,225,225);
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items:top;
+}
+
+.review-card-user-image {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('./assets/banner.jpg');
+}
+
+.review-card-user-container{
+  display: inline-block;
+  margin: 0px 10px;
+  vertical-align: top;
+}
+
+
+.review-card-username{
+  /* margin: -10px 10px 5px 10px; */
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+.review-card-date{
+  /* margin: 5px 10px 10px 10px; */
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 4px;
+  letter-spacing: 1px;
+  color: rgba(150,150,150)
+}
+
+.review-card-actions i {
+  font-size: 12px;
+  margin-right: 10px;
+  color: rgb(150,150,150);
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.review-card-actions i:hover {
+  color: rgb(75,75,75)
+}
