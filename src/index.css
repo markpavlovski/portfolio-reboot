@@ -1,3 +1,5 @@
+/*  Utility */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,10 @@
   box-sizing: border-box;
   color: rgb(72,72,72);
   text-align: left;
+}
+
+.hidden {
+  display:none;
 }
 
 /*  Nav Bar */
@@ -233,7 +239,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50px;
-  background-image: url('./assets/banner.jpg');
+  background-image: url('./assets/dandog.jpg');
 }
 
 .review-card-user-container{
@@ -271,4 +277,17 @@
 
 .review-card-actions i:hover {
   color: rgb(75,75,75)
+}
+
+.review-card-stars i{
+  font-size: 12px;
+  color: rgb(0,132,137);
+}
+
+.review-card-text {
+  display: block;
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: rgb(120,120,120);
 }
