@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Col, Row} from 'react-materialize'
+import {Col, Row, Modal, Button} from 'react-materialize'
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 
@@ -10,13 +10,20 @@ class App extends Component {
     return (
       <div className="App">
 
+        <Modal id='login' actions='' className='modal'>
+          Log In
+        </Modal>
+        <Modal id='signup' actions='' className='modal'>
+          Sign Up
+        </Modal>
+
         <div className='nav bar'>
           <div className='nav logo'>
             <img alt=''src={'./assets/nav-logo.png'} className='nav logo image'/>
           </div>
           <div className='nav links'>
-            <a>Sign Up</a>
-            <a>Log In</a>
+          <a href="#signup">Sign Up</a>
+            <a href="#login">Log In</a>
           </div>
         </div>
 
@@ -414,6 +421,7 @@ class App extends Component {
 
 
           </section>
+
         </div>
 
 

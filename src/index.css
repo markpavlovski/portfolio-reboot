@@ -378,3 +378,12 @@
   letter-spacing: 1px;
   color: rgb(120,120,120);
 }
+
+
+/*  Modal */
+
+.modal {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 2px;
+}
