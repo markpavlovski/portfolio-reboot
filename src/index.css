@@ -162,7 +162,94 @@
   margin-top: calc(0px + 40px);
 }
 
+.message-box-card {
+  margin: 30px;
+  background-color: rgba(0,0,0,0.0);
+  padding-bottom: 20px;
+}
 
+.message-box-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items:top;
+  border-bottom: 1px solid rgb(225,225,225);
+
+}
+
+.message-box-card-user-image {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url('./assets/dandog.jpg');
+}
+
+.message-box-card-user-container{
+  display: inline-block;
+  margin: 0px 10px;
+  vertical-align: top;
+}
+
+
+.message-box-card-username{
+  /* margin: -10px 10px 5px 10px; */
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+.message-box-card-date{
+  /* margin: 5px 10px 10px 10px; */
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 4px;
+  letter-spacing: 1px;
+  color: rgba(150,150,150)
+}
+
+.message-box-card-stars i {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 15px;
+  color: rgb(150,150,150);
+  cursor: pointer;
+  transition: color .3s ease;
+  font-size: 16px;
+}
+
+.message-box-card-stars i:hover {
+  color: rgb(0,132,137);
+}
+
+.message-box-card-text-input {
+  margin-top:20px;
+  padding: 10px;
+  height: 170px;
+  resize: none;
+  border: 1px solid rgb(225,225,225);
+}
+
+.message-box-card-text-input:focus {
+  outline: 0.5px solid rgb(220,220,220)
+}
+
+
+.message-box-card-submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255,90,95);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+/*  Main Item Details*/
 .item-page-item-card {
   margin-top: 30px;
 }

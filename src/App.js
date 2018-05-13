@@ -12,7 +12,7 @@ class App extends Component {
 
         <div className='nav bar'>
           <div className='nav logo'>
-            <img src={'./assets/nav-logo.png'} className='nav logo image'/>
+            <img alt=''src={'./assets/nav-logo.png'} className='nav logo image'/>
           </div>
           <div className='nav links'>
             <a>Sign Up</a>
@@ -38,7 +38,7 @@ class App extends Component {
 
             <Row className='card-container'>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -49,7 +49,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -60,7 +60,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -71,7 +71,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -82,7 +82,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -93,7 +93,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -104,7 +104,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -115,7 +115,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -141,7 +141,7 @@ class App extends Component {
 
             <Row className='card-container'>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -152,7 +152,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -163,7 +163,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -174,7 +174,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -185,7 +185,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -196,7 +196,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -207,7 +207,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -218,7 +218,7 @@ class App extends Component {
                 </div><p className = 'card-review-count'>301</p>
               </Col>
               <Col s={6} l={3} xl={3} className='item-card'>
-                <img src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
+                <img alt=''src={'http://placecage.com/600/400'} className='responsive-img card-image'/>
                 <h1 className='card-title'>Delicious Snack Title</h1>
                 <h2 className='card-short-description'>Delicious Snack Short Descripion</h2>
                 <div className ='card-stars'>
@@ -268,11 +268,37 @@ class App extends Component {
 
               </Col>
               <Col s={12} l={5}>
-                <div className='message-box'></div>
+                <div className='message-box'>
+
+                <form className='message-box-card'>
+                  <div className='message-box-card-header'>
+                    <div>
+                       <img alt=''className='message-box-card-user-image' src={'./assets/tengo.jpg'}/>
+                       <div className='message-box-card-user-container'>
+                         <h3 className='message-box-card-username'>Tengo</h3>
+                         <h4 className='message-box-card-date'>May 2018</h4>
+                       </div>
+                     </div>
+                     <div className='message-box-card-stars'>
+                       <i className="fas fa-star" />
+                       <i className="fas fa-star" />
+                       <i className="fas fa-star" />
+                       <i className="fas fa-star" />
+                       <i className="fas fa-star" />
+                     </div>
+                   </div>
+
+                  <textarea className='message-box-card-text-input' placeholder='What did you think about this snack?'></textarea>
+
+                  <button className='message-box-card-submit-button'>Submit Review</button>
+                </form>
+
+
+                </div>
               </Col>
               <Col s={12} l={7}>
 
-                 <div class='item-page-reviews-container'>
+                 <div className='item-page-reviews-container'>
                    <p className = 'item-page-card-review-count'>301 Reviews</p>
                    <div className ='item-page-card-stars'>
                      <i className="fas fa-star" />
@@ -288,15 +314,15 @@ class App extends Component {
                  <div className='review-card'>
                  <div className='review-card-header'>
                    <div>
-                      <img className='review-card-user-image' src={'./assets/dandog.jpg'}/>
+                      <img alt=''className='review-card-user-image' src={'./assets/dandog.jpg'} />
                       <div className='review-card-user-container'>
                         <h3 className='review-card-username'>Dandog</h3>
                         <h4 className='review-card-date'>May 2018</h4>
                       </div>
                     </div>
                     <div className='review-card-actions'>
-                      <i class="far fa-edit hidden"></i>
-                      <i class="far fa-trash-alt hidden"></i>
+                      <i className="far fa-edit hidden"></i>
+                      <i className="far fa-trash-alt hidden"></i>
                     </div>
                   </div>
                    <div className ='review-card-stars'>
@@ -317,15 +343,15 @@ class App extends Component {
                  <div className='review-card'>
                  <div className='review-card-header'>
                    <div>
-                      <img className='review-card-user-image'src={'./assets/tengo.jpg'}/>
+                      <img alt=''className='review-card-user-image'src={'./assets/tengo.jpg'}/>
                       <div className='review-card-user-container'>
                         <h3 className='review-card-username'>Tengo</h3>
                         <h4 className='review-card-date'>May 2018</h4>
                       </div>
                     </div>
                     <div className='review-card-actions'>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
+                      <i className="far fa-edit"></i>
+                      <i className="far fa-trash-alt"></i>
                     </div>
                   </div>
                    <div className ='review-card-stars'>
@@ -349,29 +375,28 @@ class App extends Component {
               </Col>
 
               <Col s={12} l={7}>
-
-                 <div className='review-card'>
+               <div className='review-card'>
                  <div className='review-card-header'>
                    <div>
-                      <img className='review-card-user-image' src={'http://placecage.com/48/48'}/>
+                      <img alt=''className='review-card-user-image' src={'http://placecage.com/48/48'}/>
                       <div className='review-card-user-container'>
                         <h3 className='review-card-username'>Nick</h3>
                         <h4 className='review-card-date'>May 2018</h4>
                       </div>
                     </div>
                     <div className='review-card-actions'>
-                      <i class="far fa-edit hidden"></i>
-                      <i class="far fa-trash-alt hidden"></i>
+                      <i className="far fa-edit hidden"></i>
+                      <i className="far fa-trash-alt hidden"></i>
                     </div>
                   </div>
-                   <div className ='review-card-stars'>
-                     <i className="fas fa-star" />
+                 <div className ='review-card-stars'>
+                   <i className="fas fa-star" />
 
-                   </div>
-                   <p className ='review-card-text'>
-                   You'll be seeing a lot of changes around here. Papa's got a brand new bag.
-                   </p>
                  </div>
+                 <p className ='review-card-text'>
+                 You'll be seeing a lot of changes around here. Papa's got a brand new bag.
+                 </p>
+               </div>
               </Col>
 
 
