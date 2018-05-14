@@ -34,7 +34,11 @@ class App extends Component {
           </div>
           <div>
             <div className='main-container banner-content'>
-
+            <div className='banner-content-left'>
+            <h1 className='banner-name'>Mark Pavlovski</h1>
+            <h2 className='banner-title'>Web Developer</h2>
+            </div>
+            <div className='banner-content-right'></div>
             </div>
             <div className='poly-container' id='banner'></div>
           </div>
