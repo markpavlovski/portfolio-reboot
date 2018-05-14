@@ -81,19 +81,25 @@ polygon {
   margin: 0px auto;
 }
 
-section {
-  
+section.white {
+  width: 100vw;
+  height: 80vh;
+}
+
+section.s-grey {
+  width: 100vw;
+  height: 80vh;
+  background-color: #f4f4f4;
+}
+section.s-white {
+  width: 100vw;
+  height: 80vh;
+  background-color: white;
 }
 
 /*  Banner */
 
 section.banner {
-  width: 100vw;
-  height: 80vh;
-  min-height: 300px;
-  background-color: #f4f4f4;
-  background-size: 100vw auto;
-  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -142,6 +148,7 @@ h2.banner-title {
   margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 80px;
+  width: 180px;
 }
 
 
@@ -149,25 +156,14 @@ h2.banner-title {
 
 /*  About */
 
-
-
-section.about {
-  width: 100vw;
-  height: 80vh;
-  min-height: 300px;
-  background-color: white;
-  background-size: 100vw auto;
-  background-position: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
+section.projects {
+  height: 150vh;
 }
 
+div#projects {
+  background-color: rgb(245,245,245);
+}
 
-
-
-/*  Main container for all the content */
-
-
-/*  Sections & Cards */
+section.contact {
+  height: 50vh;
+}

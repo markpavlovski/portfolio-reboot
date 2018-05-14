@@ -18,10 +18,10 @@ class App extends Component {
     return (
       <div className="App">
 
-      {/*  Banner */}
+      {/*  Banner  */}
 
 
-        <section className='banner'>
+        <section className='banner s-grey'>
           <div className='nav bar'>
             <div className='nav logo'>
               @mrkpvlvski
@@ -45,21 +45,28 @@ class App extends Component {
           </div>
         </section>
 
-      {/*  About */}
+      {/*  About  */}
 
 
-      <section className='about'>
+      <section className='about s-white'>
           <div className='main-container about-content'></div>
       </section>
       <div className='poly-container white-to-grey' id='about'></div>
 
 
-      {/*  Projects */}
+      {/*  Projects  */}
 
-      <section className='projects'>
+      <section className='projects s-grey'>
           <div className='main-container projects-content'></div>
       </section>
+      <div className='poly-container grey-to-white' id='projects'></div>
 
+
+      {/*  Contact  */}
+
+      <section className='contact s-white'>
+          <div className='main-container contact-content'></div>
+      </section>
 
 
       </div>
@@ -162,6 +169,7 @@ class App extends Component {
   componentDidMount = () => {
     this.attachGreyToWhite('.poly-container#banner')
     this.attachWhiteToGrey('.poly-container#about')
+    this.attachGreyToWhite('.poly-container#projects')
   }
 }
 
