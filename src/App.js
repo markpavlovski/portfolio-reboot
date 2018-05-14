@@ -10,25 +10,6 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Modal id='login' actions='' className='modal'>
-          <img alt=''src={'./assets/nav-logo.png'} className='modal-image'/>
-          <form className='modal-form'>
-            <input type="email" class="validate" placeholder='Email Address'/>
-            <input type="password" class="validate" placeholder='Password'/>
-            <button className='modal-button'>Log In</button>
-          </form>
-        </Modal>
-        <Modal id='signup' actions='' className='modal'>
-          <form className='modal-form'>
-          <input type="text" class="validate" placeholder='First Name'/>
-          <input type="text" class="validate" placeholder='Last Name'/>
-            <input type="email" class="validate" placeholder='Email Address'/>
-            <input type="password" class="validate" placeholder='Password'/>
-            <input type="text" class="validate" placeholder='Picture URL - http://mywebsite.com/me.jpg'/>
-            <button className='modal-button'>Sign Up</button>
-          </form>
-        </Modal>
-
         <div className='nav bar'>
           <div className='nav logo'>
             <img alt=''src={'./assets/nav-logo.png'} className='nav logo image'/>
@@ -41,7 +22,10 @@ class App extends Component {
           </div>
         </div>
 
-        <div className='banner'></div>
+        <div className='banner'>
+          <div className='banner-left'></div>
+          <div className='banner-right'></div>
+        </div>
 
         {/* This Section is For the Front Page*/}
 
