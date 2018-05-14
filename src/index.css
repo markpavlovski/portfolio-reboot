@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255,255,255,0.05);
   width: 100vw;
 }
 
@@ -56,27 +56,31 @@
 
 .banner {
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
   min-height: 300px;
-  background-color: red;
-  background-image: url('./assets/banner.jpg');
+  background-color: #f4f4f4;
   background-size: 100vw auto;
   background-position: center;
   opacity: .8;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.banner-left {
-  width: 60%;
+.banner-content {
+  background-color: red;
   height: 100px;
-  background-image: linear-gradient(60deg, #34ADFF 50%, rgba(0,0,0,0) 50%);
+  width:100%;
 }
-.banner-right {
-  width: 40%;
-  height: 100px;
-  background-color: white;
+
+polygon {
+  fill: white;
+}
+
+.poly-container {
+  width: 100%;
+  font-size: 0px;
 }
 
 
@@ -84,7 +88,6 @@
 
 .main-container {
   max-width:1275px;
-  height: 500px;
   margin: 0px auto;
   padding: 10px;
 }
