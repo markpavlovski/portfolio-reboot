@@ -18,9 +18,10 @@ class App extends Component {
     return (
       <div className="App">
 
+      {/*  Banner */}
 
 
-        <div className='banner'>
+        <section className='banner'>
           <div className='nav bar'>
             <div className='nav logo'>
               @mrkpvlvski
@@ -42,25 +43,22 @@ class App extends Component {
             </div>
             <div className='poly-container' id='banner'></div>
           </div>
-        </div>
+        </section>
 
-        {/* This Section is For the Front Page*/}
-
-        <div className='main-container'>
-
-          <section className='footer'>
-
-            <Row >
-              <Col s={12}>
-                <div className='footer-block'></div>
-                <p>2018 © Snacks, Inc.</p>
-              </Col>
-            </Row>
+      {/*  About */}
 
 
-          </section>
-        </div>
+      <section className='about'>
+          <div className='main-container about-content'></div>
+      </section>
+      <div className='poly-container white-to-grey' id='about'></div>
 
+
+      {/*  Projects */}
+
+      <section className='projects'>
+          <div className='main-container projects-content'></div>
+      </section>
 
 
 
@@ -68,16 +66,15 @@ class App extends Component {
     );
   }
 
-  componentDidMount = () => {
-
+  attachGreyToWhite = selector => {
     const HEIGHT = 60
     const render = () => {
 
-    const container = document.querySelector('.poly-container#banner')
+    const container = document.querySelector(selector)
     while (container.firstElementChild) {
       container.removeChild(container.firstElementChild)
     }
-    const svg = select(".poly-container#banner")
+    const svg = select(selector)
       .append("svg")
       .attr("width", window.innerWidth)
       .attr("height",HEIGHT)
@@ -111,10 +108,60 @@ class App extends Component {
       .append("polygon")
       .attr("points", stagePoints)
     }
-
     render()
-
     window.addEventListener('resize', render)
+  }
+
+
+  attachWhiteToGrey = selector => {
+    const HEIGHT = 60
+    const render = () => {
+
+    const container = document.querySelector(selector)
+    while (container.firstElementChild) {
+      container.removeChild(container.firstElementChild)
+    }
+    const svg = select(selector)
+      .append("svg")
+      .attr("width", window.innerWidth)
+      .attr("height",HEIGHT)
+
+
+    const x = scaleLinear().range([0, window.innerWidth]);
+    const y = scaleLinear().range([0, HEIGHT]);
+
+
+    x.domain([0, window.innerWidth]);
+    y.domain([0, HEIGHT]);
+
+
+    const points = [
+          {"x":0, "y":0},
+          {"x":0,"y":HEIGHT},
+          {"x":window.innerWidth*1/3,"y": 0},
+          {"x":window.innerWidth,"y":HEIGHT},
+          {"x":window.innerWidth,"y":0},
+        ];
+
+
+    const stagePoints = points => points
+      .map(point => [x(point.x),y(point.y)].join(','))
+      .join(' ')
+
+
+    svg.selectAll("polygon")
+      .data([points])
+      .enter()
+      .append("polygon")
+      .attr("points", stagePoints)
+    }
+    render()
+    window.addEventListener('resize', render)
+  }
+
+  componentDidMount = () => {
+    this.attachGreyToWhite('.poly-container#banner')
+    this.attachWhiteToGrey('.poly-container#about')
   }
 }
 
