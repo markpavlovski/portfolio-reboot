@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=OpenSans:200,300,400,500,600,700');
 
 /*  Utility */
 
@@ -11,6 +12,7 @@
   box-sizing: border-box;
   color: rgb(51,51,51);
   text-align: left;
+  font-family: 'Nanum+Brush+Script', sans-serif;
 }
 
 .hidden {
@@ -18,6 +20,62 @@
 }
 
 
+/*  General  */
+
+.main-container {
+  max-width:900px;
+  margin: 0px auto;
+}
+
+section.white {
+  width: 100vw;
+  height: 80vh;
+}
+
+section.s-grey {
+  width: 100vw;
+  height: 80vh;
+  background-color: #f4f4f4;
+}
+section.s-white {
+  width: 100vw;
+  height: 80vh;
+  background-color: white;
+}
+
+
+h1.section-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0px 20px;
+  padding: 100px 0px;
+  font-weight: 300;
+}
+
+h1.title-right {
+  text-align: right;
+}
+
+h1.title-left {
+  text-align: left;
+}
+
+h1.title-center {
+  text-align: center;
+}
+
+
+h1.small {
+  font-size: 20px;
+}
+
+a {
+  color: rgb(51,51,51);
+}
+
+a:hover {
+  color: rgb(150,151,151);
+}
 
 /*  Nav Bar */
 
@@ -30,7 +88,9 @@
 }
 
 .nav.logo {
-  margin-left: 10px;
+  margin-left: 55px;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 22px;
 }
 
 .nav.logo.image {
@@ -39,8 +99,9 @@
 
 .nav.links {
  width: 300px;
- height: 80px;
+ /* height: 80px; */
  text-align: right;
+ margin: 20px 40px;
 }
 
 .nav.links a {
@@ -49,7 +110,7 @@
   margin-right: 15px;
   font-size: 13px;
   color: rgb(72,72,72);
-  padding: 0px 15px;
+  padding: 0px 5px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -74,28 +135,6 @@ polygon {
   background-color: rgb(245,245,245);
 }
 
-/*  General  */
-
-.main-container {
-  max-width:900px;
-  margin: 0px auto;
-}
-
-section.white {
-  width: 100vw;
-  height: 80vh;
-}
-
-section.s-grey {
-  width: 100vw;
-  height: 80vh;
-  background-color: #f4f4f4;
-}
-section.s-white {
-  width: 100vw;
-  height: 80vh;
-  background-color: white;
-}
 
 /*  Banner */
 
@@ -130,7 +169,6 @@ section.banner {
 
 h1.banner-name {
   display: block;
-  font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
   font-size: 40px;
   font-weight: 300;
@@ -140,7 +178,6 @@ h1.banner-name {
 }
 h2.banner-title {
   display: block;
-  font-family: 'Cabin', sans-serif;
   letter-spacing: 2px;
   font-size: 20px;
   font-weight: 200;
@@ -156,13 +193,91 @@ h2.banner-title {
 
 /*  About */
 
+section.about {
+  height: auto;
+}
+
+div.about-content{
+  width:100%;
+  padding: 20px;
+}
+
+.skills-icons {
+  margin:auto;
+  /* width: 800px; */
+}
+
+
+.skills-icons i {
+  font-size: 40px;
+  margin: 40px 0px;
+  display: block;
+  text-align: center;
+}
+
+
+.intro-text-container {
+  margin: 80px 0px;
+}
+
+
+h4.intro-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+
+
+
+
+/*  Projects  */
 section.projects {
-  height: 150vh;
+  height: auto;
 }
 
 div#projects {
   background-color: rgb(245,245,245);
 }
+
+.project-card {
+  margin: 80px 0px;
+}
+
+div.project-card-visual {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+  border: solid rgba(225,225,225) 1px;
+}
+
+div.project-card-content{
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+h1.project-card-title {
+  margin: 0px;
+  font-size: 35px;
+}
+
+p.project-card-description{
+  margin: 30px 0px;
+}
+
+p.project-card-links {
+  margin: 10px 0px;
+}
+
+
+h1.visit-github {
+  display: block;
+  padding: 300px 0px;
+  color: red;
+}
+
+
+/*  */
 
 section.contact {
   height: 50vh;
