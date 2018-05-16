@@ -4,7 +4,6 @@ class BasicSceneMtStHelens {
     this.initTestObjects()
     this.initControls()
     this.animate()
-    // this.handleResize()
   }
 
   initScene(container){
@@ -12,7 +11,6 @@ class BasicSceneMtStHelens {
 
     // Set up scene
     this.scene = new THREE.Scene()
-    this.scene.background = new THREE.Color(0xf0f0f0)
 
     this.windowX = .4
     this.windowY = .4
@@ -36,10 +34,12 @@ class BasicSceneMtStHelens {
     this.scene.add(this.group)
 
     //  Renderer settings
-    this.renderer = new THREE.WebGLRenderer({antialias: true})
+    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true})
     this.renderer.setPixelRatio(window.devicePixelRatio)
     this.renderer.setSize(this.customWidth, this.customHeight)
     this.container.appendChild(this.renderer.domElement)
+    this.renderer.setClearColor( 0x000000, 0 ); // the default
+
 
     this.targetRotation = 0
 

@@ -83,7 +83,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255,255,255,0.05);
+  /* background-color: rgba(255,255,255,0.05); */
   width: 100vw;
 }
 
@@ -160,7 +160,7 @@ section.banner {
 }
 .banner-content-right {
   display: inline-block;
-  background-color: rgba(0,0,0,0.1);
+  /* background-color: rgba(0,0,0,0.1); */
   height: 400px;
   width: 60%;
   vertical-align: bottom;
@@ -249,6 +249,10 @@ div.project-card-visual {
   height: 300px;
   margin-bottom: 30px;
   border: solid rgba(225,225,225) 1px;
+}
+
+div.project-card-visual.mt-st-helens{
+  border: solid rgba(225,225,225) 0px;
 }
 
 div.project-card-content{

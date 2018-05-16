@@ -5,7 +5,6 @@ class Geometry3DnoGui extends BasicSceneMtStHelens {
     this.data = data
     this.scale = scale
     this.radius = radius
-    this.scene.background = new THREE.Color(0xdddddd)
     this.initObjects()
     this.gElevationScale = 1
   }
