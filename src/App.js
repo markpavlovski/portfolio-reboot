@@ -22,16 +22,16 @@ class App extends Component {
           </div>
           <div className='nav links'>
             <a href="https://www.linkedin.com/in/markpavlovski" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/mrkpvlvski" target="_blank">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a href="https://twitter.com/mrkpvlvski" target="_blank">
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a href="#">
-              <i class="far fa-envelope"></i>
+              <i className="far fa-envelope"></i>
             </a>
 
           </div>
@@ -56,22 +56,22 @@ class App extends Component {
 
           <Row className='skills-icons'>
             <Col s={4} l={2}>
-              <i class="fab fa-js"></i>
+              <i className="fab fa-js"></i>
             </Col>
             <Col s={4} l={2}>
-              <i class="fab fa-node-js"></i>
+              <i className="fab fa-node-js"></i>
             </Col>
             <Col s={4} l={2}>
-              <i class="fab fa-react"></i>
+              <i className="fab fa-react"></i>
             </Col>
             <Col s={4} l={2}>
-              <i class="fas fa-database"></i>
+              <i className="fas fa-database"></i>
             </Col>
             <Col s={4} l={2}>
-              <i class="fab fa-python"></i>
+              <i className="fab fa-python"></i>
             </Col>
             <Col s={4} l={2}>
-              <i class="fab fa-git-square"></i>
+              <i className="fab fa-git-square"></i>
             </Col>
           </Row>
           <Row className='intro-text-container'>
@@ -111,7 +111,7 @@ class App extends Component {
 
           <Row className='project-card left'>
             <Col s={12} l={6}>
-              <div className='project-card-visual'></div>
+              <div className='project-card-visual mtStHelens'></div>
             </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>
@@ -300,10 +300,18 @@ class App extends Component {
     window.addEventListener('resize', render)
   }
 
+  attachMtStHelens = selector => {
+    console.log('hi');
+  }
+
+
+
+
   componentDidMount = () => {
     this.attachGreyToWhite('.poly-container#banner')
     this.attachWhiteToGrey('.poly-container#about')
     this.attachGreyToWhite('.poly-container#projects')
+    this.attachMtStHelens('.mtStHelens')
   }
 }
 

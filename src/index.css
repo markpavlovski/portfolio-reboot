@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=OpenSans:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 /*  Utility */
 
@@ -180,7 +180,7 @@ h2.banner-title {
   display: block;
   letter-spacing: 2px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0px;
   margin-top: 20px;
   margin-bottom: 100px;
@@ -270,11 +270,6 @@ p.project-card-links {
 }
 
 
-h1.visit-github {
-  display: block;
-  padding: 300px 0px;
-  color: red;
-}
 
 
 /*  */
