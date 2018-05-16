@@ -8,6 +8,7 @@ import {select} from 'd3-selection';
 import {axisLeft, axisBottom} from 'd3-axis';
 import 'd3-transition';
 
+
 class App extends Component {
 
   render() {
@@ -111,7 +112,7 @@ class App extends Component {
 
           <Row className='project-card left'>
             <Col s={12} l={6}>
-              <div className='project-card-visual mtStHelens'></div>
+              <div className='project-card-visual mt-st-helens'></div>
             </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>
@@ -311,7 +312,7 @@ class App extends Component {
     this.attachGreyToWhite('.poly-container#banner')
     this.attachWhiteToGrey('.poly-container#about')
     this.attachGreyToWhite('.poly-container#projects')
-    this.attachMtStHelens('.mtStHelens')
+    this.attachMtStHelens('.mt-st-helens')
   }
 }
 
