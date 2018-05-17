@@ -161,13 +161,13 @@ class App extends Component {
               </div>
             </Col>
             <Col s={12} l={6}>
-              <div className='project-card-visual'></div>
+              <div className='project-card-visual proximity'></div>
             </Col>
           </Row>
 
-          <Row className='project-card left'>
+          <Row className='project-card left snacks'>
             <Col s={12} l={6}>
-              <div className='project-card-visual'></div>
+              <div className='project-card-visual snacks'></div>
             </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>

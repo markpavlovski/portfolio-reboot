@@ -83,7 +83,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(255,255,255,0.05); */
+  background-color: rgba(255,255,255,0.05);
   width: 100vw;
 }
 
@@ -160,7 +160,7 @@ section.banner {
 }
 .banner-content-right {
   display: inline-block;
-  /* background-color: rgba(0,0,0,0.1); */
+  background-color: rgba(0,0,0,0.1);
   height: 400px;
   width: 60%;
   vertical-align: bottom;
@@ -254,6 +254,36 @@ div.project-card-visual {
 div.project-card-visual.mt-st-helens{
   border: solid rgba(225,225,225) 0px;
 }
+
+div.project-card-visual.proximity{
+  border: solid rgba(225,225,225) 0px;
+  border-bottom: solid rgba(225,225,225) 1px;
+  background-image: url('./assets/proximity.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center top;
+  height: 400px;
+}
+
+
+div.project-card-visual.snacks{
+  border: solid rgba(225,225,225) 0px;
+  border-bottom: solid rgba(225,225,225) 1px;
+  border: solid rgba(225,225,225) 1px;
+  background-image: url('./assets/snacks.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size:contain;
+  height: 363.7px;
+}
+
+.project-card.snacks:hover div.project-card-visual.snacks{
+  background-image: url('https://media.giphy.com/media/YlInKk2EKeI7KWZGQ3/giphy.gif');
+}
+
+
+
+
 
 div.project-card-content{
   margin-bottom: 30px;
