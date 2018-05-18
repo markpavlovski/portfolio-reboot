@@ -19,7 +19,9 @@ class App extends Component {
       <section className='banner s-grey'>
         <div className='nav bar'>
           <div className='nav logo'>
-            @mrkpvlvski
+            <a href="#">
+              <i className="far fa-envelope"></i>
+            </a>
           </div>
           <div className='nav links'>
             <a href="https://www.linkedin.com/in/markpavlovski" target="_blank">
@@ -31,10 +33,6 @@ class App extends Component {
             <a href="https://twitter.com/mrkpvlvski" target="_blank">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#">
-              <i className="far fa-envelope"></i>
-            </a>
-
           </div>
         </div>
         <div>
@@ -43,7 +41,7 @@ class App extends Component {
               <h1 className='banner-name'>Mark Pavlovski</h1>
               <h2 className='banner-title'>Web Developer</h2>
             </div>
-            <div className='banner-content-right'></div>
+            <div className='banner-content-right hide-on-small-only'></div>
           </div>
           <div className='poly-container' id='banner'></div>
         </div>
@@ -81,10 +79,13 @@ class App extends Component {
                 Hello, I'm Mark. I'm a full stack Web Developer based in Seattle, WA.
               </h4>
             </Col>
+            <Col m={6} className='hide-on-small-only'>
+              <img src={'./assets/line-right.png'} className="responsive-img dotted-line-right"/>
+            </Col>
           </Row>
           <Row className='intro-text-container'>
-            <Col s={12} m={6}>
-              <h4 className='intro-text'></h4>
+            <Col m={6} className='hide-on-small-only'>
+              <img src={'./assets/line-left.png'} className="responsive-img dotted-line-left"/>
             </Col>
             <Col s={12} m={6}>
               <h4 className='intro-text'>
@@ -191,19 +192,132 @@ class App extends Component {
               </div>
             </Col>
           </Row>
+          <Row className='project-card left other'>
+            <Col s={12}>
+              <h1 className='section-title other-projects'>More Projects</h1>
+            </Col>
+          </Row>
+          <Row className='project-card left other'>
+            <Col s={3}>
+              <div className='small-project-card snaky-snake'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Snaky Snake</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card breakout'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Breakout</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card skillpoints'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Skill Points</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card calculator'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Calculator</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card hexnerd'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Hex Nerd</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card neighbors'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Neighbor Finder</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card ajaxblog'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>Ajax Blog</h1>
+                  <div className='small-project-card-icons'>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col s={3}>
+              <div className='small-project-card'>
+                <div className='small-project-card-content all-projects'>
+                  <h1 className='small-project-card-title all-projects'>See All Projects</h1>
+                </div>
+              </div>
+            </Col>
+            {/* <Col s={3}>
+              <div className='small-project-card'>
+                <div className='small-project-card-content all-projects'>
+                  <h1 className='small-project-card-title all-projects'>See All Projects</h1>
+                </div>
+              </div>
+            </Col> */}
+          </Row>
 
-          <h1 className='section-title title-center small'><a href=''>Visit Github for more projects</a></h1>
-
-
-
-        </div>
+      </div>
       </section>
       <div className='poly-container grey-to-white' id='projects'></div>
 
       {/* Contact */}
 
       <section className='contact s-white'>
-        <div className='main-container contact-content'></div>
+        <div >
+          <Row className='contact-card'>
+            <Col s={12} m={6}>
+              <ul className='contact-icons'>
+                <li><i className="far fa-envelope"></i> markpavlovski@gmail.com</li>
+                <li><i className="fab fa-linkedin-in"></i> @markpavlovski</li>
+                <li><i className="fab fa-github"></i> @mrkpvlvski</li>
+                <li><i className="fab fa-twitter"></i> @mrkpvlvski</li>
+              </ul>
+            </Col>
+            <Col s={12} m={6}>
+            <div className='contact-holder'>
+              <h1 className='contact-name'>Mark Pavlovski</h1>
+              <h2 className='contact-title'>Web Developer</h2>
+              <h2 className='contact-title'>Seattle, WA</h2>
+            </div>
+            </Col>
+          </Row>
+
+        </div>
       </section>
 
     </div>);

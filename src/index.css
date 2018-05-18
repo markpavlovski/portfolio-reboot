@@ -50,6 +50,7 @@ h1.section-title {
   margin: 0px 20px;
   padding: 100px 0px;
   font-weight: 300;
+  width: 100%;
 }
 
 h1.title-right {
@@ -67,6 +68,7 @@ h1.title-center {
 
 h1.small {
   font-size: 20px;
+  width: 100%;
 }
 
 a {
@@ -83,18 +85,15 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255,255,255,0.05);
   width: 100vw;
 }
 
 .nav.logo {
   margin-left: 55px;
-  font-family: 'Nanum Brush Script', cursive;
-  font-size: 22px;
 }
 
-.nav.logo.image {
-  width: 40%;
+.nav.logo i {
+  font-size: 18px;
 }
 
 .nav.links {
@@ -108,7 +107,7 @@ a:hover {
   display: inline-block;
   line-height: 77px;
   margin-right: 15px;
-  font-size: 13px;
+  font-size: 17px;
   color: rgb(72,72,72);
   padding: 0px 5px;
   cursor: pointer;
@@ -153,7 +152,6 @@ section.banner {
 
 .banner-content-left {
   display: inline-block;
-  /* background-color: blue; */
   min-height: 100px;
   width: 40%;
 
@@ -205,6 +203,7 @@ div.about-content{
 .skills-icons {
   margin:auto;
   /* width: 800px; */
+  margin-bottom: 80px;
 }
 
 
@@ -216,10 +215,6 @@ div.about-content{
 }
 
 
-.intro-text-container {
-  margin: 80px 0px;
-}
-
 
 h4.intro-text {
   font-size: 20px;
@@ -229,12 +224,41 @@ h4.intro-text {
 
 
 
+.dotted-line-right {
+  display: block;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.dotted-line-left {
+  float:right;
+  display: block;
+  width: 60%;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.left-line-container {
+  background-color: red;
+}
+
+.intro-text-container:last-child {
+  margin-bottom: 100px;
+}
+
+
+
+
+
 
 
 /*  Projects  */
 section.projects {
   height: auto;
+  margin: 0px;
+  padding: 0px;
 }
+
 
 div#projects {
   background-color: rgb(245,245,245);
@@ -281,7 +305,14 @@ div.project-card-visual.snacks{
   background-image: url('https://media.giphy.com/media/YlInKk2EKeI7KWZGQ3/giphy.gif');
 }
 
+.project-card.snacks {
+  margin: 80px 0px 0px 0px;
+}
 
+.project-card.other {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
 
 
 
@@ -304,10 +335,143 @@ p.project-card-links {
 }
 
 
+.section-title.other-projects{
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+  margin: 0px;
+}
+
+/* Small Projects */
+
+.small-project-card {
+  background-color: rgba(0,0,0,0.1);
+  width: 100%;
+  height: 150px;
+  margin: 10px 0px;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.9;
+}
 
 
-/*  */
+.small-project-card-content {
+  background-color: rgb(245,245,245);
+  width: 100%;
+  height: 150px;
+  margin: 10px 0px;
+  opacity:0;
+  transition: all 0.3s ease;
+  border: solid rgba(225,225,225) 1px;
+}
+
+
+.small-project-card-content:hover {
+  opacity: 1;
+}
+
+
+
+.small-project-card-content.all-projects {
+  opacity: 1;
+  cursor: pointer;
+}
+h1.small-project-card-title{
+  width: 100%;
+  text-align: center;
+  margin: 50px auto 15px auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+h1.small-project-card-title.all-projects{
+  margin-top: 65px;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.small-project-card-icons{
+  width: 68px;
+  margin:auto;
+}
+
+div.small-project-card-icons i {
+  margin: 10px;
+  font-size: 12px;
+}
+
+
+.small-project-card.snaky-snake {
+  background-image: url('./assets/card-snakysnake.png');
+}
+
+
+.small-project-card.breakout {
+  background-image: url('./assets/card-breakout.png');
+}
+
+.small-project-card.skillpoints {
+  background-image: url('./assets/card-skillpoints.png');
+}
+
+.small-project-card.calculator {
+  background-image: url('./assets/card-calculator.png');
+}
+
+
+.small-project-card.hexnerd {
+  background-image: url('./assets/card-hexnerd.png');
+}
+
+
+.small-project-card.neighbors {
+  background-image: url('./assets/card-neighbors.png');
+}
+
+.small-project-card.ajaxblog {
+  background-image: url('./assets/card-ajaxblog.png');
+  margin-bottom: 100px;
+}
+
+
+
+/*  Contact */
 
 section.contact {
-  height: 50vh;
+  height: auto;
+}
+
+.contact-name {
+  font-size: 16px;
+  margin: 0px 0px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.contact-title {
+  font-size: 12px;
+  margin: 5px 0px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+
+.contact-holder {
+  float: right;
+  margin-top: 10px;
+}
+
+
+.contact-icons li {
+  font-size: 14px;
+}
+
+.contact-icons i {
+  margin-right: 10px;
+}
+
+
+.contact-card {
+  margin: 100px 100px;
 }
