@@ -118,6 +118,15 @@ a:hover {
   color: rgb(150,150,150);
 }
 
+
+#toast-container {
+  top: 30px !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 10% !important;
+}
+
+
 /*  Polygon */
 
 
@@ -142,6 +151,7 @@ section.banner {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  min-height: 500px;
 }
 
 .banner-content {
@@ -339,7 +349,7 @@ p.project-card-links {
   width: 100%;
   padding: 70px;
   text-align: center;
-  margin: 0px;
+  margin: 80px 0px;
 }
 
 /* Small Projects */

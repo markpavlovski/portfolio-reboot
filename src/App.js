@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Col, Row, Modal, Button} from 'react-materialize'
+import {Col, Row} from 'react-materialize'
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import {scaleLinear} from 'd3-scale';
-import {line} from 'd3-shape';
 import {select} from 'd3-selection';
-import {axisLeft, axisBottom} from 'd3-axis';
 import 'd3-transition';
 
 
@@ -20,17 +18,17 @@ class App extends Component {
         <div className='nav bar'>
           <div className='nav logo'>
             <a href="#">
-              <i className="far fa-envelope"></i>
+              <i className="far fa-envelope" onClick={event=> document.execCommand("copy")}></i>
             </a>
           </div>
           <div className='nav links'>
-            <a href="https://www.linkedin.com/in/markpavlovski" target="_blank">
+            <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/mrkpvlvski" target="_blank">
+            <a href="https://github.com/mrkpvlvski" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://twitter.com/mrkpvlvski" target="_blank">
+            <a href="https://twitter.com/mrkpvlvski" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-twitter"></i>
             </a>
           </div>
@@ -203,8 +201,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Snaky Snake</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -214,8 +212,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Breakout</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -225,8 +223,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Skill Points</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -236,8 +234,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Calculator</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -247,8 +245,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Hex Nerd</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -258,8 +256,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Neighbor Finder</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -269,8 +267,8 @@ class App extends Component {
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Ajax Blog</h1>
                   <div className='small-project-card-icons'>
-                    <i class="fas fa-link"></i>
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
                   </div>
                 </div>
               </div>
@@ -303,9 +301,9 @@ class App extends Component {
             <Col s={12} m={6}>
               <ul className='contact-icons'>
                 <li><i className="far fa-envelope"></i> markpavlovski@gmail.com</li>
-                <li><i className="fab fa-linkedin-in"></i> @markpavlovski</li>
-                <li><i className="fab fa-github"></i> @mrkpvlvski</li>
-                <li><i className="fab fa-twitter"></i> @mrkpvlvski</li>
+                <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin-in"></i> @markpavlovski</li></a>
+                <a href="https://github.com/mrkpvlvski/" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github"></i> @mrkpvlvski</li></a>
+                <a href="https://twitter.com/mrkpvlvski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-twitter"></i> @mrkpvlvski</li></a>
               </ul>
             </Col>
             <Col s={12} m={6}>

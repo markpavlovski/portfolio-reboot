@@ -6,3 +6,9 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+
+document.addEventListener("copy", event => {
+  event.preventDefault()
+  event.clipboardData.setData("text/plain", 'markpavlovski@gmail.com')
+  window.Materialize.toast('Copied to clipboard!', 1000)
+})
