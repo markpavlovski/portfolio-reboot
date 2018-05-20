@@ -9,7 +9,13 @@ import 'd3-transition';
 
 class App extends Component {
 
+  constructor(){
+    super()
+    this.myRef = React.createRef()
+  }
+
   render() {
+    console.log(this.myRef.current);
     return (<div className="App">
 
       {/* Banner */}
@@ -39,7 +45,8 @@ class App extends Component {
               <h1 className='banner-name'>Mark Pavlovski</h1>
               <h2 className='banner-title'>Web Developer</h2>
             </div>
-            <div className='banner-content-right hide-on-small-only'></div>
+            <div className='banner-content-right hide-on-small-only' ref={this.myRef} ></div>
+
           </div>
           <div className='poly-container' id='banner'></div>
         </div>
@@ -417,7 +424,33 @@ class App extends Component {
     console.log('hi');
   }
 
+  handleBackgroundChange = (node) => {
+    console.log(node);
+    console.log(node.getBoundingClientRect().width)
+    const n = 20
+    const width = node.getBoundingClientRect().width
+    const childBlock = document.createElement('div')
+    childBlock.setAttribute('style',`background-color:${'red'}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+    const children = []
+    for (let i =0; i< n*15; i++){
+      const newChildBlock = childBlock.cloneNode(true)
+      children.push(newChildBlock)
+    }
+    children.map(child => node.appendChild(child))
+    console.log(node.childNodes);
 
+    for (let i =0; i< node.childNodes.length; i++){
+    setInterval(()=>{
+        const shade = 225 + Math.random()*20
+        const color = `rgb(${shade},${shade},${shade})`
+        // console.log(color);
+        node.childNodes[i].setAttribute('style','style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+        // console.log(node.getAttribute('style'));
+        console.log(i);
+
+      }, 2000 )
+    }
+  }
 
 
   componentDidMount = () => {
@@ -425,6 +458,8 @@ class App extends Component {
     this.attachWhiteToGrey('.poly-container#about')
     this.attachGreyToWhite('.poly-container#projects')
     this.attachMtStHelens('.mt-st-helens')
+    this.handleBackgroundChange(this.myRef.current)
+
   }
 }
 
