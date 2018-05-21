@@ -440,7 +440,7 @@ class App extends Component {
         const color = `rgba(${shade},${shade},${shade},0.5)`
         node.childNodes[i].setAttribute('style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px;`)
       }
-    }, 3000 )
+    }, 2500 )
   }
 
 

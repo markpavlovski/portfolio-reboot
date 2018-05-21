@@ -374,6 +374,7 @@ p.project-card-links {
   background-size:cover;
   background-repeat: no-repeat;
   opacity: 0.9;
+  /* border: solid rgba(225,225,225) 1px; */
 }
 
 
