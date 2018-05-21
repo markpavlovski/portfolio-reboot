@@ -203,7 +203,7 @@ class App extends Component {
             </Col>
           </Row>
           <Row className='project-card left other'>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card snaky-snake'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Snaky Snake</h1>
@@ -214,7 +214,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card breakout'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Breakout</h1>
@@ -225,7 +225,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card skillpoints'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Skill Points</h1>
@@ -236,7 +236,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card calculator'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Calculator</h1>
@@ -247,7 +247,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card hexnerd'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Hex Nerd</h1>
@@ -258,7 +258,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card neighbors'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Neighbor Finder</h1>
@@ -269,7 +269,7 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
+            <Col s={6} m={3}>
               <div className='small-project-card ajaxblog'>
                 <div className='small-project-card-content'>
                   <h1 className='small-project-card-title'>Ajax Blog</h1>
@@ -280,20 +280,18 @@ class App extends Component {
                 </div>
               </div>
             </Col>
-            <Col s={3}>
-              <div className='small-project-card'>
-                <div className='small-project-card-content all-projects'>
-                  <h1 className='small-project-card-title all-projects'>See All Projects</h1>
+            <Col s={6} m={3}>
+              <div className='small-project-card oldportfolio'>
+                <div className='small-project-card-content'>
+                  <h1 className='small-project-card-title'>HTML5 Portfolio</h1>
+                  <div className='small-project-card-icons'>
+                    <i className="fas fa-link"></i>
+                    <i className="fas fa-code"></i>
+                  </div>
                 </div>
               </div>
             </Col>
-            {/* <Col s={3}>
-              <div className='small-project-card'>
-                <div className='small-project-card-content all-projects'>
-                  <h1 className='small-project-card-title all-projects'>See All Projects</h1>
-                </div>
-              </div>
-            </Col> */}
+
           </Row>
 
       </div>
@@ -425,31 +423,24 @@ class App extends Component {
   }
 
   handleBackgroundChange = (node) => {
-    console.log(node);
-    console.log(node.getBoundingClientRect().width)
     const n = 20
     const width = node.getBoundingClientRect().width
     const childBlock = document.createElement('div')
-    childBlock.setAttribute('style',`background-color:${'red'}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+    childBlock.setAttribute('style',`width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
     const children = []
     for (let i =0; i< n*15; i++){
       const newChildBlock = childBlock.cloneNode(true)
       children.push(newChildBlock)
     }
     children.map(child => node.appendChild(child))
-    console.log(node.childNodes);
 
-    for (let i =0; i< node.childNodes.length; i++){
     setInterval(()=>{
+    for (let i =0; i< node.childNodes.length; i++){
         const shade = 225 + Math.random()*20
         const color = `rgb(${shade},${shade},${shade})`
-        // console.log(color);
-        node.childNodes[i].setAttribute('style','style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
-        // console.log(node.getAttribute('style'));
-        console.log(i);
-
-      }, 2000 )
-    }
+        node.childNodes[i].setAttribute('style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+      }
+    }, 2000 )
   }
 
 

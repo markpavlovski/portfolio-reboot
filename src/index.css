@@ -362,7 +362,8 @@ p.project-card-links {
   height: 150px;
   margin: 10px 0px;
   background-position: center;
-  background-size: contain;
+  background-size:cover;
+  background-repeat: no-repeat;
   opacity: 0.9;
 }
 
@@ -443,6 +444,12 @@ div.small-project-card-icons i {
 
 .small-project-card.ajaxblog {
   background-image: url('./assets/card-ajaxblog.png');
+  margin-bottom: 100px;
+}
+
+
+.small-project-card.oldportfolio {
+  background-image: url('./assets/card-oldportfolio.png');
   margin-bottom: 100px;
 }
 
