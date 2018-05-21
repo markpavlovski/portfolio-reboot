@@ -86,6 +86,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  min-height: 100px;
 }
 
 .nav.logo {
@@ -168,13 +169,21 @@ section.banner {
 }
 .banner-content-right {
   display: inline-block;
-  background-color: rgba(0,0,0,0.1);
-  height: 400px;
+  background-color: rgba(0,0,0,0);
+  height: 80vh;
   width: 60%;
   vertical-align: bottom;
   margin-bottom: -55px;
+  margin-top: -100px;
   transition: all 2s linear;
   font-size: 0px;
+  overflow: hidden;
+}
+
+.banner-content-right div {
+  display: inline-block;
+  margin: 0px;
+  transition: all 3s linear;
 }
 
 h1.banner-name {

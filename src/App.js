@@ -426,9 +426,9 @@ class App extends Component {
     const n = 20
     const width = node.getBoundingClientRect().width
     const childBlock = document.createElement('div')
-    childBlock.setAttribute('style',`width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+    childBlock.setAttribute('style',`width: ${width/n}px; height: ${width/n}px;`)
     const children = []
-    for (let i =0; i< n*15; i++){
+    for (let i =0; i< n*25; i++){
       const newChildBlock = childBlock.cloneNode(true)
       children.push(newChildBlock)
     }
@@ -436,11 +436,11 @@ class App extends Component {
 
     setInterval(()=>{
     for (let i =0; i< node.childNodes.length; i++){
-        const shade = 225 + Math.random()*20
-        const color = `rgb(${shade},${shade},${shade})`
-        node.childNodes[i].setAttribute('style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px; display: inline-block; margin: 0px;`)
+        const shade = 235 + Math.random()*20
+        const color = `rgba(${shade},${shade},${shade},0.5)`
+        node.childNodes[i].setAttribute('style',`background-color:${color}; width: ${width/n}px; height: ${width/n}px;`)
       }
-    }, 2000 )
+    }, 3000 )
   }
 
 
