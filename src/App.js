@@ -12,6 +12,38 @@ class App extends Component {
   constructor(){
     super()
     this.myRef = React.createRef()
+    this.smallProjectData = [
+      {
+        name:'HexNerd',
+        style:'hexnerd',
+        src: 'sadsdasd'
+      },
+      {
+        name:'SnakySnake',
+        style:'snaky-snake',
+        src: 'sadsdasd'
+      },
+      {
+        name:'Breakout',
+        style:'breakout',
+        src: 'sadsdasd'
+      },
+      {
+        name:'SkillPoints',
+        style:'skillpoints',
+        src: 'sadsdasd'
+      },
+      {
+        name:'Calculator',
+        style:'calculator',
+        src: 'sadsdasd'
+      },
+      {
+        name:'Portfolio',
+        style:'oldportfolio',
+        src: 'sadsdasd'
+      }
+    ]
   }
 
   render() {
@@ -202,97 +234,20 @@ class App extends Component {
               <h1 className='section-title other-projects'>More Projects</h1>
             </Col>
           </Row>
-          <Row className='project-card left other'>
-            <Col s={6} m={3}>
-              <div className='small-project-card snaky-snake'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Snaky Snake</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
+
+          <Row className='small-project-card-container'>
+            {this.smallProjectData.map(({name,style,src})=>(
+              <Col  s={6} m={4} l={2}>
+                <div className={`small-project-card ${style}`}>
+                  <div className='small-project-card-content valign-wrapper'>
+                    <h1 className='small-project-card-title'>{name}</h1>
                   </div>
                 </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card breakout'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Breakout</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card skillpoints'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Skill Points</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card calculator'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Calculator</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card hexnerd'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Hex Nerd</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card neighbors'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Neighbor Finder</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card ajaxblog'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>Ajax Blog</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col s={6} m={3}>
-              <div className='small-project-card oldportfolio'>
-                <div className='small-project-card-content'>
-                  <h1 className='small-project-card-title'>HTML5 Portfolio</h1>
-                  <div className='small-project-card-icons'>
-                    <i className="fas fa-link"></i>
-                    <i className="fas fa-code"></i>
-                  </div>
-                </div>
-              </div>
-            </Col>
+              </Col>
+            ))}
 
           </Row>
+
 
       </div>
       </section>

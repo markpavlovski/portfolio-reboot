@@ -87,6 +87,7 @@ a:hover {
   align-items: center;
   width: 100vw;
   min-height: 100px;
+  z-index: 999;
 }
 
 .nav.logo {
@@ -367,25 +368,31 @@ p.project-card-links {
 
 .small-project-card {
   background-color: rgba(0,0,0,0.1);
-  width: 100%;
-  height: 150px;
-  margin: 10px 0px;
+  width: 120px;
+  height: 120px;
+  margin: 10px auto;
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
   opacity: 0.9;
-  /* border: solid rgba(225,225,225) 1px; */
+  border-radius: 200px;
+  margin-bottom: 60px;
+  border: solid rgba(225,225,225) 1px;
+  padding: 0px;
+  box-sizing: content-box;
+  cursor: pointer;
 }
 
 
 .small-project-card-content {
   background-color: rgb(245,245,245);
-  width: 100%;
-  height: 150px;
-  margin: 10px 0px;
+  width: 120px;
+  height: 120px;
+  margin: 0px 0px;
   opacity:0;
   transition: all 0.3s ease;
-  border: solid rgba(225,225,225) 1px;
+  border-radius: 200px;
+  border: solid rgba(225,225,225) 0.1px;
 }
 
 
@@ -402,16 +409,9 @@ p.project-card-links {
 h1.small-project-card-title{
   width: 100%;
   text-align: center;
-  margin: 50px auto 15px auto;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-
-h1.small-project-card-title.all-projects{
-  margin-top: 65px;
-  text-align: center;
   font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0px;
 }
 
 div.small-project-card-icons{
@@ -422,6 +422,12 @@ div.small-project-card-icons{
 div.small-project-card-icons i {
   margin: 10px;
   font-size: 12px;
+}
+
+
+.small-project-card-container {
+  margin:auto;
+  padding-bottom: 100px;
 }
 
 
