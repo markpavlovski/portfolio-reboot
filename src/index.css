@@ -166,6 +166,7 @@ section.banner {
   display: inline-block;
   min-height: 100px;
   width: 40%;
+  z-index: 999;
 
 }
 .banner-content-right {
@@ -195,6 +196,7 @@ h1.banner-name {
   margin: 0px;
   margin-left: 80px;
   width: 100px;
+  z-index: 999;
 }
 h2.banner-title {
   display: block;
@@ -206,6 +208,7 @@ h2.banner-title {
   margin-bottom: 100px;
   margin-left: 80px;
   width: 180px;
+  z-index: 999;
 }
 
 
@@ -260,6 +263,18 @@ h4.intro-text {
   margin-right: 70px;
 }
 
+div.dotted-line-down-container {
+  width: 100vw;
+}
+
+.dotted-line-down {
+  display: block;
+  width: 4px;
+  margin-top: 30px;
+  margin: auto;
+}
+
+
 .left-line-container {
   background-color: red;
 }
@@ -293,6 +308,7 @@ div#projects {
 div.project-card-visual {
   margin: auto !important;
   width: 400px;
+  max-width: 400px;
   height: 300px;
   margin-bottom: 30px;
   border: solid rgba(225,225,225) 1px;
@@ -480,29 +496,64 @@ section.contact {
   height: auto;
 }
 
+
 .contact-name {
   font-size: 16px;
   margin: 0px 0px;
   letter-spacing: 1px;
-  text-align: right;
 }
 
 .contact-title {
   font-size: 12px;
   margin: 5px 0px;
   letter-spacing: 1px;
-  text-align: right;
 }
 
 
-.contact-holder {
+.contact-name-center {
+  font-size: 18px;
+  margin: 0px 0px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.contact-title-center {
+  font-size: 14px;
+  margin: 5px 0px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.contact-holder-right {
   float: right;
   margin-top: 10px;
 }
 
+.contact-holder-center {
+  margin-top: 40px;
+}
+
+ul.contact-icons {
+  margin: auto;
+}
 
 .contact-icons li {
   font-size: 14px;
+}
+
+.contact-icons-center  {
+  margin: 30px 0px;
+}
+
+
+.contact-icons-center li {
+  font-size: 14px;
+  margin: auto;
+  /* display: flex; */
+  /* justify-content: ; */
+  width: 200px;
+  padding-left: 25px;
 }
 
 .contact-icons i {

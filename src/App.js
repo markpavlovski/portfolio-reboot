@@ -120,11 +120,17 @@ class App extends Component {
             <Col m={6} className='hide-on-small-only'>
               <img src={'./assets/line-right.png'} className="responsive-img dotted-line-right"/>
             </Col>
+            <Col m={6} className='hide-on-med-and-up'>
+              <div className='dotted-line-down-container'>
+                <img src={'./assets/line-down.png'} className="dotted-line-down"/>
+              </div>
+            </Col>
           </Row>
           <Row className='intro-text-container'>
             <Col m={6} className='hide-on-small-only'>
               <img src={'./assets/line-left.png'} className="responsive-img dotted-line-left"/>
             </Col>
+
             <Col s={12} m={6}>
               <h4 className='intro-text'>
                 I'm passionate about building beautiful, data-driven apps that solve real world problems.
@@ -132,6 +138,11 @@ class App extends Component {
             </Col>
           </Row>
           <Row className='intro-text-container'>
+            <Col m={6} className='hide-on-med-and-up'>
+              <div className='dotted-line-down-container'>
+                <img src={'./assets/line-down.png'} className="dotted-line-down"/>
+              </div>
+            </Col>
             <Col s={12} m={6}>
               <h4 className='intro-text'>
                 My goal is to contribute to innovative projects and push the limits of technology.
@@ -266,7 +277,13 @@ class App extends Component {
         <div >
           <Row className='contact-card'>
             <Col s={12} l={6}>
-              <ul className='contact-icons'>
+              <ul className='contact-icons-center hide-on-large-only'>
+                <li><i className="far fa-envelope"></i> mkpavlovski@gmail.com</li>
+                <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin-in"></i> @markpavlovski</li></a>
+                <a href="https://github.com/mrkpvlvski/" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github"></i> @mrkpvlvski</li></a>
+                <a href="https://twitter.com/mrkpvlvski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-twitter"></i> @mrkpvlvski</li></a>
+              </ul>
+              <ul className='contact-icons hide-on-med-and-down'>
                 <li><i className="far fa-envelope"></i> markpavlovski@gmail.com</li>
                 <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin-in"></i> @markpavlovski</li></a>
                 <a href="https://github.com/mrkpvlvski/" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github"></i> @mrkpvlvski</li></a>
@@ -274,11 +291,16 @@ class App extends Component {
               </ul>
             </Col>
             <Col s={12} l={6}>
-            <div className='contact-holder'>
-              <h1 className='contact-name'>Mark Pavlovski</h1>
-              <h2 className='contact-title'>Web Developer</h2>
-              <h2 className='contact-title'>Seattle, WA</h2>
-            </div>
+              <div className='contact-holder-right hide-on-med-and-down'>
+                <h1 className='contact-name'>Mark Pavlovski</h1>
+                <h2 className='contact-title'>Web Developer</h2>
+                <h2 className='contact-title'>Seattle, WA</h2>
+              </div>
+              <div className='contact-holder-center hide-on-large-only'>
+                <h1 className='contact-name-center'>Mark Pavlovski</h1>
+                <h2 className='contact-title-center'>Web Developer</h2>
+                <h2 className='contact-title-center'>Seattle, WA</h2>
+              </div>
             </Col>
           </Row>
 
@@ -390,7 +412,7 @@ class App extends Component {
     const childBlock = document.createElement('div')
     childBlock.setAttribute('style',`width: ${width/n}px; height: ${width/n}px;`)
     const children = []
-    for (let i =0; i< n*25; i++){
+    for (let i =0; i< n*40; i++){
       const newChildBlock = childBlock.cloneNode(true)
       children.push(newChildBlock)
     }
