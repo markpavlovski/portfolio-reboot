@@ -88,7 +88,8 @@ class App extends Component {
 
       <section className='about s-white'>
         <div className='main-container about-content'>
-          <h1 className='section-title title-right'>Skills / Interests</h1>
+          <h1 className='section-title title-right hide-on-med-and-down'>Skills / Interests</h1>
+          <h1 className='section-title title-center hide-on-large-only'>Skills / Interests</h1>
 
           <Row className='skills-icons'>
             <Col s={4} l={2}>
@@ -146,7 +147,8 @@ class App extends Component {
 
       <section className='projects s-grey'>
         <div className='main-container projects-content'>
-          <h1 className='section-title title-left'>Recent Projects</h1>
+          <h1 className='section-title title-left hide-on-med-and-down'>Recent Projects</h1>
+          <h1 className='section-title title-center hide-on-large-only'>Recent Projects</h1>
 
           <Row className='project-card left'>
             <Col s={12} l={6}>
@@ -154,7 +156,8 @@ class App extends Component {
             </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>
-                <h1 className='project-card-title'>Elevations</h1>
+                <h1 className='project-card-title hide-on-med-and-down'>Elevations</h1>
+                <h1 className='project-card-title hide-on-large-only center-align'>Elevations</h1>
 
                 <p className='project-card-description'>
                   Lorem ipsum dolor sit amet, esse graeco tractatos no has. No vel sumo oportere prodesset. In mei congue tamquam. Probatus suavitate sed te, no vix paulo congue euripidis. Qui meis solet ea, noster partiendo vulputate qui te.
@@ -176,10 +179,13 @@ class App extends Component {
           </Row>
 
           <Row className='project-card right'>
-
+            <Col s={12} l={6} className='hide-on-large-only'>
+              <div className='project-card-visual proximity'></div>
+            </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>
-                <h1 className='project-card-title'>Proximity</h1>
+                <h1 className='project-card-title hide-on-med-and-down'>Proximity</h1>
+                <h1 className='project-card-title hide-on-large-only center-align'>Proximity</h1>
 
                 <p className='project-card-description'>
                   Lorem ipsum dolor sit amet, esse graeco tractatos no has. No vel sumo oportere prodesset. In mei congue tamquam. Probatus suavitate sed te, no vix paulo congue euripidis. Qui meis solet ea, noster partiendo vulputate qui te.
@@ -198,7 +204,7 @@ class App extends Component {
                 </p>
               </div>
             </Col>
-            <Col s={12} l={6}>
+            <Col s={12} l={6} className='hide-on-med-and-down'>
               <div className='project-card-visual proximity'></div>
             </Col>
           </Row>
@@ -209,7 +215,8 @@ class App extends Component {
             </Col>
             <Col s={12} l={6}>
               <div className='project-card-content'>
-                <h1 className='project-card-title'>Snack Review</h1>
+                <h1 className='project-card-title hide-on-med-and-down'>Snack Review</h1>
+                <h1 className='project-card-title hide-on-large-only center-align'>Snack Review</h1>
 
                 <p className='project-card-description'>
                   Lorem ipsum dolor sit amet, esse graeco tractatos no has. No vel sumo oportere prodesset. In mei congue tamquam. Probatus suavitate sed te, no vix paulo congue euripidis. Qui meis solet ea, noster partiendo vulputate qui te.
@@ -258,7 +265,7 @@ class App extends Component {
       <section className='contact s-white'>
         <div >
           <Row className='contact-card'>
-            <Col s={12} m={6}>
+            <Col s={12} l={6}>
               <ul className='contact-icons'>
                 <li><i className="far fa-envelope"></i> markpavlovski@gmail.com</li>
                 <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin-in"></i> @markpavlovski</li></a>
@@ -266,7 +273,7 @@ class App extends Component {
                 <a href="https://twitter.com/mrkpvlvski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-twitter"></i> @mrkpvlvski</li></a>
               </ul>
             </Col>
-            <Col s={12} m={6}>
+            <Col s={12} l={6}>
             <div className='contact-holder'>
               <h1 className='contact-name'>Mark Pavlovski</h1>
               <h2 className='contact-title'>Web Developer</h2>

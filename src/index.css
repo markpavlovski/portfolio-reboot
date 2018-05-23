@@ -47,7 +47,7 @@ section.s-white {
 h1.section-title {
   font-size: 28px;
   text-transform: uppercase;
-  margin: 0px 20px;
+  margin: 0px 0px;
   padding: 100px 0px;
   font-weight: 300;
   width: 100%;
@@ -291,6 +291,7 @@ div#projects {
 }
 
 div.project-card-visual {
+  margin: auto !important;
   width: 400px;
   height: 300px;
   margin-bottom: 30px;
@@ -339,6 +340,7 @@ div.project-card-visual.snacks{
 
 
 div.project-card-content{
+  margin:auto;
   margin-bottom: 30px;
   width: 400px;
 }
@@ -346,6 +348,7 @@ div.project-card-content{
 h1.project-card-title {
   margin: 0px;
   font-size: 35px;
+  padding: 20px 0px;
 }
 
 p.project-card-description{
