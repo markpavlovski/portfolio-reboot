@@ -122,7 +122,7 @@ class App extends Component {
             </Col>
             <Col m={6} className='hide-on-med-and-up'>
               <div className='dotted-line-down-container'>
-                <img src={'./assets/line-down.png'} className="dotted-line-down"/>
+                <img src={'./assets/line-down-small.png'} className="dotted-line-down"/>
               </div>
             </Col>
           </Row>
@@ -140,7 +140,7 @@ class App extends Component {
           <Row className='intro-text-container'>
             <Col m={6} className='hide-on-med-and-up'>
               <div className='dotted-line-down-container'>
-                <img src={'./assets/line-down.png'} className="dotted-line-down"/>
+                <img src={'./assets/line-down-small.png'} className="dotted-line-down"/>
               </div>
             </Col>
             <Col s={12} m={6}>
@@ -278,7 +278,7 @@ class App extends Component {
           <Row className='contact-card'>
             <Col s={12} l={6}>
               <ul className='contact-icons-center hide-on-large-only'>
-                <li><i className="far fa-envelope"></i> mkpavlovski@gmail.com</li>
+                <li><i className="far fa-envelope"></i> markpavlovski@gmail.com</li>
                 <a href="https://www.linkedin.com/in/markpavlovski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin-in"></i> @markpavlovski</li></a>
                 <a href="https://github.com/mrkpvlvski/" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github"></i> @mrkpvlvski</li></a>
                 <a href="https://twitter.com/mrkpvlvski" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-twitter"></i> @mrkpvlvski</li></a>

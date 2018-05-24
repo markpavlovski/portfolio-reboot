@@ -272,8 +272,7 @@ div.dotted-line-down-container {
 .dotted-line-down {
   display: block;
   width: 4px;
-  margin-top: 30px;
-  margin: auto;
+  margin: 40px 0px 40px 43vw;
 }
 
 
@@ -560,7 +559,7 @@ ul.contact-icons {
   margin: auto;
   /* display: flex; */
   /* justify-content: ; */
-  width: 200px;
+  width: 210px;
   padding-left: 25px;
 }
 
