@@ -177,7 +177,7 @@ class App extends Component {
                 <p className='project-card-links'>
                   Links:
                 </p>
-                <p>
+                <p className='project-card-links-text'>
                   <a href=''>
                     Deployed App</a><br/>
                   <a href=''>
@@ -205,7 +205,7 @@ class App extends Component {
                 <p className='project-card-links'>
                   Links:
                 </p>
-                <p>
+                <p className='project-card-links-text'>
                   <a href=''>
                     Deployed App</a><br/>
                   <a href=''>
@@ -236,7 +236,7 @@ class App extends Component {
                 <p className='project-card-links'>
                   Links:
                 </p>
-                <p>
+                <p className='project-card-links-text'>
                   <a href=''>
                     Deployed App</a><br/>
                   <a href=''>

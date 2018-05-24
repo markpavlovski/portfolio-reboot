@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
 
 /*  Utility */
 
@@ -26,6 +23,11 @@
   max-width:900px;
   margin: 0px auto;
 }
+
+section {
+  overflow: hidden !important;
+}
+
 
 section.white {
   width: 100vw;
@@ -364,15 +366,21 @@ div.project-card-content{
 h1.project-card-title {
   margin: 0px;
   font-size: 35px;
-  padding: 20px 0px;
+  padding: 20px 20px;
 }
 
 p.project-card-description{
   margin: 30px 0px;
+  padding: 0px 20px;
 }
 
 p.project-card-links {
   margin: 10px 0px;
+  padding: 0px 20px;
+}
+
+p.project-card-links-text {
+  padding: 0px 20px;
 }
 
 
